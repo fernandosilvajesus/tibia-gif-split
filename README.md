@@ -5,6 +5,7 @@ Aplicação web para extrair frames de arquivos GIF e convertê-los para PNG com
 ## Características
 
 - ✅ Interface moderna e responsiva com Flask
+- 🧩 Os frames são extraídos mantendo exatamente as dimensões originais do GIF, sem compressão com perda de qualidade
 - 📤 Upload de arquivos GIF com drag & drop
 - 🎨 Nomeação customizada de frames (ex: walk_1, walk_2, ...)
 - 🖼️ Preview dos frames em grid
