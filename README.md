@@ -1,5 +1,5 @@
 # Tibia GIF Split 🎬
-<img src='https://videos.openai.com/az/vg-assets/task_01kf8rfaaaep0vn2dqeb5q8yh3%2F1768746929_img_1.webp?se=2026-01-24T14%3A00%3A00Z&sp=r&sv=2024-08-04&sr=b&skoid=3d249c53-07fa-4ba4-9b65-0bf8eb4ea46a&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-01-18T02%3A53%3A41Z&ske=2026-01-25T02%3A58%3A41Z&sks=b&skv=2024-08-04&sig=0u6rJ2EEsikUjSFaIeqXWduFBmkY3Vw8q3bCRAoXF1g%3D&ac=oaivgprodscus2' />
+<img src='https://videos.openai.com/az/vg-assets/task_01kf8rpf1pe5h8yv0qjge28kyp%2F1768747228_img_1.webp?se=2026-01-24T14%3A00%3A00Z&sp=r&sv=2024-08-04&sr=b&skoid=3d249c53-07fa-4ba4-9b65-0bf8eb4ea46a&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-01-18T03%3A05%3A56Z&ske=2026-01-25T03%3A10%3A56Z&sks=b&skv=2024-08-04&sig=UxkMJ%2BpE9BllK3GCfcTBNZShGpx8OVQDnmv3bCtWjgI%3D&ac=oaivgprodscus2' />
 Aplicação web para extrair frames de arquivos GIF e convertê-los para PNG com um nome customizado.
 
 ## Características
