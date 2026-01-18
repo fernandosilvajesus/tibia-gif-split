@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor GIF para PNG</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1>🎬 Conversor GIF para PNG</h1>
+                <p>Extraia todos os frames do seu GIF com facilidade</p>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main">
+            <!-- Upload Section -->
+            <section class="upload-section">
+                <div class="upload-box" id="uploadBox">
+                    <div class="upload-icon">📁</div>
+                    <h2>Selecione um arquivo GIF</h2>
+                    <p>ou arraste e solte aqui</p>
+                    <input 
+                        type="file" 
+                        id="fileInput" 
+                        accept=".gif" 
+                        hidden
+                    >
+                    <button class="btn btn-primary" onclick="document.getElementById('fileInput').click()">
+                        Escolher Arquivo
+                    </button>
+                </div>
+
+                <div id="fileInfo" class="file-info hidden">
+                    <p id="fileName">Arquivo: </p>
+                    <p id="fileSize">Tamanho: </p>
+                    
+                    <div class="custom-name-input">
+                        <label for="customName">Nome para os frames:</label>
+                        <input 
+                            type="text" 
+                            id="customName" 
+                            placeholder="Ex: walk, run, jump..."
+                            value=""
+                        >
+                        <small>Será gerado como: walk_1, walk_2, walk_3...</small>
+                    </div>
+
+                    <button class="btn btn-primary" onclick="uploadFile()" style="margin-top: 20px; width: 100%;">
+                        🚀 Gerar Frames
+                    </button>
+                </div>
+            </section>
+
+            <!-- Progress Section -->
+            <section id="progressSection" class="progress-section hidden">
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <p class="progress-text">Processando seu GIF...</p>
+                </div>
+            </section>
+
+            <!-- Results Section -->
+            <section id="resultsSection" class="results-section hidden">
+                <div class="results-header">
+                    <h2>✅ Conversão Concluída!</h2>
+                    <p id="frameCount"></p>
+                </div>
+
+                <div class="frames-grid" id="framesGrid">
+                    <!-- Frames serão inseridos aqui -->
+                </div>
+
+                <div class="action-buttons">
+                    <button class="btn btn-primary" onclick="downloadAllFrames()">
+                        📦 Baixar Todos (ZIP)
+                    </button>
+                    <button class="btn btn-secondary" onclick="resetForm()">
+                        🔄 Converter Outro GIF
+                    </button>
+                </div>
+            </section>
+
+            <!-- Error Section -->
+            <section id="errorSection" class="error-section hidden">
+                <div class="error-box">
+                    <p id="errorMessage"></p>
+                    <button class="btn btn-secondary" onclick="resetForm()">
+                        Tentar Novamente
+                    </button>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>GIF para PNG Converter © 2026 | Faça upload, receba frames em PNG</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
