@@ -24,7 +24,7 @@ Aplicação web para extrair frames de arquivos GIF e convertê-los para PNG com
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/seu-usuario/tibia_gif_split.git
+git clone https://github.com/fernandosilvajesus/tibia-gif-split
 cd tibia_gif_split
 ```
 
